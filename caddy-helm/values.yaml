@@ -20,9 +20,9 @@ autoscaling:
   maxReplicas: 5
   targetCPUUtilizationPercentage: 5
 
-# Image details for the application and flyway migration
+# Image details for the application
 image:
-  repository: my-caddy-server
+  repository: peggyliao/static:latest
   tag: "0.1.0"
   pullPolicy: IfNotPresent
 
