@@ -24,3 +24,9 @@
    ```
    helm install caddy-helm --namespace caddy-helm --create-namespace ./caddy-helm
    ```
+   ```
+   kubectl create secret docker-registry my-dockerhub-secret \
+    --docker-username=<your-username> \
+    --docker-password=<your-password> \
+    --docker-email=<your-email>
+  ```

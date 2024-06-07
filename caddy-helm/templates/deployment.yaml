@@ -41,11 +41,11 @@ spec:
                         - {{ .Release.Name }}
                 topologyKey: topology.kubernetes.io/zone
       imagePullSecrets:
-        - name: quay-creds
+        - name: my-dockerhub-secret
       containers:
         - name: {{ .Chart.Name }}
           #image: "{{ .Values.image.repository }}:v{{ .Values.image.tag }}"
-          image: my-caddy-server:0.1.0
+          image: peggyliao/static:latest
           ports:
             - name: http
               containerPort: {{ .Values.application.port }}
