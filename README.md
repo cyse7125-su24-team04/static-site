@@ -1,6 +1,6 @@
 # static-site# Static Site with Caddy
 
-This repository contains a simple static site served by the Caddy web server.
+This repository contains a simple static site served by the Caddy web server. This project demonstrates how to serve a static site using the Caddy web server in a Docker container.
 
 ## Running the Application
 
